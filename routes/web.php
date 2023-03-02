@@ -15,5 +15,8 @@ use App\Http\Controllers\CortesController;
 |
 */
 
-// Route::get('/', [CortesController::class, 'index']);
 Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/generar-corte', [HomeController::class, 'generarCorte'])->name('generar-corte');
+
+Route::get('/generar-active', [HomeController::class, 'generarActive'])->name('generar-active');
