@@ -23,7 +23,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
         $schedule->command('command:cortes')
-        ->everyTwoHours();
+        ->everyMinute();
 
         $schedule->command('command:active')->hourly();
     }
